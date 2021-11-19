@@ -1,6 +1,6 @@
 package fop.w8inter;
 
-public class Animal {
+public abstract class Animal {
     protected int age;
 
     public int getAge() {
