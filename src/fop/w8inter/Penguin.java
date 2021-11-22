@@ -39,13 +39,13 @@ public class Penguin extends Animal implements Copyable, Comparable{
 * return this.age - other.age; (-|x| or |x|)
 * if(height != other.height)
 * return this.height - other.height; (-|x| or |x|)
-* return this.name.compareTo(other.name); (-|x| or |x|)
+* return this.name.compareTo(other.name); (-|x| or |x| or 0)
 * */
     }
 
     @Override
     public Penguin copy() {
-       // return new Penguin(this.getAge(),this.getName(),this.getHeight());
-        return this;
+        return new Penguin(this.getAge(),this.getName(),this.getHeight());
+
     }
 }
